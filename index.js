@@ -3,21 +3,21 @@ const jsonFilePath = "./data.json";
 const setImagesToBody = (data) => {
   data.forEach((element, index) => {
     const containerDiv = document.createElement("div");
-    containerDiv.classList.add("container");
+    containerDiv.classList.add("container", "border", "p-2");
 
-    const imgElement = document.createElement("div");
-    imgElement.classList.add("id");
-    imgElement.textContent =`Id: ${element.id}`;
+    const idElement = document.createElement("div");
+    idElement.classList.add("fs-3");
+    idElement.textContent =`Id: ${element.id}`;
 
     const nameDiv = document.createElement("div");
-    nameDiv.classList.add("name");
+    nameDiv.classList.add("fs-5");
     nameDiv.textContent = `Name: ${element.name}`;
 
     const currentPriceDiv = document.createElement("div");
-    currentPriceDiv.classList.add("symbol");
+    currentPriceDiv.classList.add("fs-5");
     currentPriceDiv.textContent = `Symbol: ${element.current_price}`;
 
-    containerDiv.appendChild(imgElement);
+    containerDiv.appendChild(idElement);
     containerDiv.appendChild(currentPriceDiv);
     containerDiv.appendChild(nameDiv);
 

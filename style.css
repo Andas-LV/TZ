@@ -4,10 +4,3 @@ body {
   gap: 20px;
   padding: 20px;
 }
-.container{
-  padding: 10px;
-  border: 1px solid black;
-}
-.id, .symbol, .name{
-  font-size: 18px;
-}
